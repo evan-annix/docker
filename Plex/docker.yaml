@@ -11,7 +11,7 @@ services:
       - TZ=Europe/London
     volumes:
       - /volume1/docker/plex:/config
-      - /volume1/data/media:/data/media
+      - /volume2/data/Media Library:/data/Media Library
     devices:
       - /dev/dri:/dev/dri
-    restart: unless-stopped
+    restart: unless-stoppedg
